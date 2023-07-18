@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "daily_exercises",
+  "info": {
+    "singularName": "daily-exercise",
+    "pluralName": "daily-exercises",
+    "displayName": "Daily Exercise",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "displayDate": {
+      "type": "date",
+      "required": true,
+      "unique": true
+    },
+    "level_1": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exercise.exercise"
+    },
+    "level_2": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exercise.exercise"
+    },
+    "level_3": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exercise.exercise"
+    }
+  }
+}
